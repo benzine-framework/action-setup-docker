@@ -29,7 +29,6 @@ outputs:
 runs:
   using: "composite"
   steps:
-    - run: printenv | sort | grep DOCKER
     - uses: docker/setup-qemu-action@v3
     - uses: crazy-max/ghaction-github-runtime@v3
     - id: does-buildx-exist
